@@ -27,7 +27,6 @@ const pickVodButton = document.getElementById('pickVodBtn');
 pickVodButton.addEventListener('click', () => {
     
     let pick = agentsData.JETT[getRandomIndex(agentsData.JETT.length)];
-    messagePar.innerHTML = `Посмотри демо ${pick}`;
+    messagePar.innerHTML = `Посмотри демо ${pick}<br><a href="http://www.youtube.com/watch?v=ofc0FE7hgEI&list=PLyUTX5LGxnvD5MOXr0q0XBoG52pYdUNcc">Ссылка на плейлист с VOD</a>`;
 });
 
-// console.log(`\n----------:| Valorant VOD picker |:----------\n\nVersion: ${version}\n\n`)
