@@ -10,7 +10,13 @@
         <div class="container">
             <h1 class="heading">----------:| Valorant VOD picker |:----------</h1>
             <p id="version"></p>
-            <p id="message" class="message">Йоуск! Нажми на "Выбрать VOD" и я тебе скажу, кого стоит посмотреть</p>
+            <p id="message" class="message">Йоуск! Выбери агента и затем нажми на "Выбрать VOD" и я тебе скажу, кого стоит посмотреть</p>
+            <div class="agent-select-block">
+                <label for="agent-select"></label>
+                <select name="agents" id="agent-select">
+                    <option value="jett">JETT</option>
+                </select>
+            </div>
             <button id="pickVodBtn" class="pick-VOD-btn">Выбрать VOD</button>
         </div>
     </main>
