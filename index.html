@@ -3,24 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant VOD picker</title>
+    <link rel="icon" href="imgs/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <title>Valorant VOD Picker</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <h1 class="heading">----------:| Valorant VOD picker |:----------</h1>
-            <p id="version"></p>
-            <p id="message" class="message">Йоуск! Выбери агента и затем нажми на "Выбрать VOD" и я тебе скажу, кого стоит посмотреть</p>
-            <div class="agent-select-block">
-                <label for="agent-select"></label>
-                <select name="agents" id="agent-select">
-                    <option value="jett">JETT</option>
-                </select>
+            <h1 class="title">Valorant VOD Picker</h1>
+            <p id="versionLine" class="version-line"></p>
+            <div id="mainActionZone" class="main-action-zone">
+                <p id="actionZoneTitle" class="action-zone-title">Pick an agent</p>
+
+                <div class="agents-groups">
+
+                    <div id="controllers" class="agents-group">
+                        <span class="group-title">
+                            <img src="" alt="Controller-icon" class="icon">
+                            Controllers
+                        </span>
+
+                        <div class="agents-pack" id="controllers-agents">
+
+                            <span id="Viper" class="agent-line">
+                                <img src="" alt="Viper icon" class="agent-icon">
+                                Viper
+                            </span>
+
+                            <span id="brimstone" class="agent-line">
+                                <img src="" alt="Brimstone icon" class="agent-icon">
+                                Brimstone
+                            </span>
+
+                            <span id="clove" class="agent-line">
+                                <img src="" alt="Clove icon" class="agent-icon">
+                                Clove
+                            </span>
+
+                            <span id="harbor" class="agent-line">
+                                <img src="" alt="Harbor icon" class="agent-icon">
+                                Harbor
+                            </span>
+
+                             <span id="omen" class="agent-line">
+                                <img src="" alt="Omen icon" class="agent-icon">
+                                Omen
+                            </span>
+
+                             <span id="viper" class="agent-line">
+                                <img src="" alt="Viper icon" class="agent-icon">
+                                Viper
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div id="duelists" class="agents-group">
+                        <span class="group-title">
+                            <img src="" alt="Duelists-icon" class="icon">
+                            Duelists
+                        </span>
+
+                        <div class="agents-pack" id="duelists-agents">
+
+                            <span id="iso" class="agent-line">
+                                <img src="" alt="Iso icon" class="agent-icon">
+                                Iso
+                            </span>
+
+                            <span id="jett" class="agent-line">
+                                <img src="" alt="Jett icon" class="agent-icon">
+                                Jett
+                            </span>
+
+                            <span id="neon" class="agent-line">
+                                <img src="" alt="Neon icon" class="agent-icon">
+                                Neon
+                            </span>
+
+                            <span id="phoenix" class="agent-line">
+                                <img src="" alt="Phoenix icon" class="agent-icon">
+                                Phoenix
+                            </span>
+
+                             <span id="raze" class="agent-line">
+                                <img src="" alt="Raze icon" class="agent-icon">
+                                Raze
+                            </span>
+
+                             <span id="reyna" class="agent-line">
+                                <img src="" alt="Reyna icon" class="agent-icon">
+                                Reyna
+                            </span>
+                            
+                            <span id="waylay" class="agent-line">
+                                <img src="" alt="Waylay icon" class="agent-icon">
+                                Waylay
+                            </span>
+                                                        
+                            <span id="yoru" class="agent-line">
+                                <img src="" alt="Yoru icon" class="agent-icon">
+                                Yoru
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="initiators" class="agents-group">
+                        <span class="group-title">
+                            <img src="" alt="Initiators-icon" class="icon">
+                            Initiators
+                        </span>
+
+                        <div class="agents-pack" id="initiators-agents">
+
+                            <span id="breach" class="agent-line">
+                                <img src="" alt="Breach icon" class="agent-icon">
+                                Breach
+                            </span>
+
+                            <span id="fade" class="agent-line">
+                                <img src="" alt="Fade icon" class="agent-icon">
+                                Fade
+                            </span>
+
+                            <span id="gekko" class="agent-line">
+                                <img src="" alt="Gekko icon" class="agent-icon">
+                                Gekko
+                            </span>
+
+                            <span id="kay_o" class="agent-line">
+                                <img src="" alt="KAY/O icon" class="agent-icon">
+                                KAY/O
+                            </span>
+
+                             <span id="skye" class="agent-line">
+                                <img src="" alt="Skye icon" class="agent-icon">
+                                Skye
+                            </span>
+
+                             <span id="sova" class="agent-line">
+                                <img src="" alt="Sova icon" class="agent-icon">
+                                Sova
+                            </span>
+                            
+                            <span id="tejo" class="agent-line">
+                                <img src="" alt="Tejo icon" class="agent-icon">
+                                Tejo
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div id="sentinels" class="agents-group">
+                        <span class="group-title">
+                            <img src="" alt="Sentinels-icon" class="icon">
+                            Sentinels
+                        </span>
+
+                        <div class="agents-pack" id="sentinels-agents">
+
+                            <span id="chamber" class="agent-line">
+                                <img src="" alt="Chamber icon" class="agent-icon">
+                                Chamber
+                            </span>
+
+                            <span id="cypher" class="agent-line">
+                                <img src="" alt="Cypher icon" class="agent-icon">
+                                Cypher
+                            </span>
+
+                            <span id="deadlock" class="agent-line">
+                                <img src="" alt="Deadlock icon" class="agent-icon">
+                                Deadlock
+                            </span>
+
+                            <span id="killjoy" class="agent-line">
+                                <img src="" alt="Killjoy icon" class="agent-icon">
+                                Killjoy
+                            </span>
+
+                             <span id="sage" class="agent-line">
+                                <img src="" alt="Sage icon" class="agent-icon">
+                                Sage
+                            </span>
+
+                             <span id="vyse" class="agent-line">
+                                <img src="" alt="Vyse icon" class="agent-icon">
+                                Vyse
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <button id="pickVodBtn" class="pick-VOD-btn">Выбрать VOD</button>
+            <button class="choose-pro-btn" id="chooseProBtn">CHOOSE PRO</button>
         </div>
     </main>
 
     <script type="module" src="main.js"></script>
 </body>
-</html>
+</html> 

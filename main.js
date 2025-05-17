@@ -1,4 +1,4 @@
-const version = 0.1
+const version = '1.0'
 const agentsData = {
     "JETT" : [
         "ZmjjKK",
@@ -14,7 +14,6 @@ const agentsData = {
     ]
 }
 
-// ./imgs/Tenz.jpg
 const imgsPaths = {
     "ZmjjKK" : "./imgs/ZmjjKK.jpg",
     "Derke" : "./imgs/Derke.jpg",
@@ -32,16 +31,30 @@ function getRandomIndex(maxNum) {
     return Math.floor(Math.random() * maxNum)
 }
 
-const versionPar = document.getElementById('version');
-versionPar.innerHTML = `Version: ${version}`
+const versionLine = document.getElementById("versionLine");
+versionLine.innerHTML = `Version: ${version}`;
 
-const messagePar = document.getElementById('message');
+const mainActionZone = document.getElementById('mainActionZone');
 
-const pickVodButton = document.getElementById('pickVodBtn');
-pickVodButton.addEventListener('click', () => {
-    
+const chooseProBtn = document.getElementById('chooseProBtn');
+chooseProBtn.addEventListener('click', () => {
     let pick = agentsData.JETT[getRandomIndex(agentsData.JETT.length)];
+
     let path = imgsPaths[pick]
-    messagePar.innerHTML = `<img src="${path}" alt="${pick} photo" style="width: 240px;"><br>Посмотри демо ${pick}<br><a href="http://www.youtube.com/watch?v=ofc0FE7hgEI&list=PLyUTX5LGxnvD5MOXr0q0XBoG52pYdUNcc">Ссылка на плейлист с VOD</a>`;
-});
+
+    mainActionZone.innerHTML = `<p id="actionZoneTitle" class="action-zone-title">Pick an agent</p>
+    <div class="pro-card" id="proCard"><img src="${path}" alt="${pick} photo" style="height: 320px;" class="player-img"><br><a class="player-nickname" href="http://www.youtube.com/watch?v=ofc0FE7hgEI&list=PLyUTX5LGxnvD5MOXr0q0XBoG52pYdUNcc">${pick}</a></div>`;
+    const actionZoneTitle = document.getElementById('actionZoneTitle');
+    actionZoneTitle.innerHTML = "You can pick another pro";
+})
+
+// const messagePar = document.getElementById('message');
+
+// const pickVodButton = document.getElementById('pickVodBtn');
+// pickVodButton.addEventListener('click', () => {
+    
+//     let pick = agentsData.JETT[getRandomIndex(agentsData.JETT.length)];
+//     let path = imgsPaths[pick]
+//     messagePar.innerHTML = `<img src="${path}" alt="${pick} photo" style="width: 240px;"><br>Посмотри демо ${pick}<br><a href="http://www.youtube.com/watch?v=ofc0FE7hgEI&list=PLyUTX5LGxnvD5MOXr0q0XBoG52pYdUNcc">Ссылка на плейлист с VOD</a>`;
+// });
 

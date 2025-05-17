@@ -1,0 +1,154 @@
+/* background main color: #171C27 */
+/* main blue color: #15d7e5 */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    background: #171c27;
+    color: #fff;
+
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.9px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 52px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 4rem;
+    color: #15d7e5;
+}
+
+.version-line {
+    color: #ffffff76;
+    font-size: .8rem;
+    margin-top: 12px;
+}
+
+.main-action-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 48px;
+}
+
+.action-zone-title {
+    color: #15d7e5;
+    font-size: 1.5rem;
+}
+
+.agents-groups {
+    /* background: #000; */
+    margin-top: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8vw;
+}
+
+
+.agents-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: #aaa; */
+    padding: 2rem;
+}
+
+.group-title {
+    font-size: 1rem;
+}
+
+.agents-pack {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2vh;   
+}
+
+.agent-line {
+    font-size: .9em;
+    margin-bottom: 1vh;
+    color: #ffffff48;
+}
+
+.choose-pro-btn {
+    margin-top: 10vh;
+
+    width: 12vw;
+    height: 6vh;
+
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.9px;
+    font-size: 1.3rem;
+    color: #ffffff;
+
+    background-color: #15d7e5;
+
+    border: none;
+    border-radius: .3rem;
+
+    /* В следующих версиях пофиксить анимацию */
+
+    transition: background-color .3s, border-radius .3s, scale .3s;
+    transition-timing-function: cubic-bezier(0.455, -0.290, 0.000, 1.540);
+}
+
+.choose-pro-btn:hover {
+    background-color: #39ecf9;
+    cursor: pointer;
+    border-radius: 1rem;
+    scale: 1.2;
+}
+
+.choose-pro-btn:active {
+    background-color: #ffffff;
+    color:#0078c3;
+}
+
+.pro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 5vh;
+}
+
+.player-nickname {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.9px;
+    color: #ffffff;
+}
+
